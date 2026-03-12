@@ -9,7 +9,7 @@ function Register() {
   const handleSubmit = async () => {
     const url = API_URL + "/auth/signup";
     const response = await axios.post(url, user);
-    setUser(response)
+    setUser(response.data)
     Navigate("/login");
   };
   return (

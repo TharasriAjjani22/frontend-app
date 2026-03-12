@@ -12,14 +12,14 @@ export default function App() {
   );
 }
 
-// // Register.jsx
-// import { AppContext } from "./App";
-// import { useContext } from "react";
-// export default function Register() {
-//   const { user } = useContext(AppContext);
-//   return (
-//     <>
-//       <h2>Hello {user}</h2>
-//     </>
- // );
-//}
+// Register.jsx
+import { AppContext } from "./App";
+import { useContext } from "react";
+export default function Register() {
+  const { user } = useContext(AppContext);
+  return (
+    <>
+      <h2>Hello {user}</h2>
+    </>
+  );
+}
